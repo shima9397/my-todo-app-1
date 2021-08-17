@@ -1,8 +1,7 @@
 function component() {
     const element = document.createElement('div');
 
-    // element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.innerHTML = 'Hello' + ' ' + 'webpack';
+    element.id = 'container';
 
     return element;
 }
