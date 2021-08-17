@@ -1,9 +1,11 @@
-const _ = require('lodash');
+// const _ = require('lodash');
+import './style.scss';
 
 function component() {
     const element = document.createElement('div');
 
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    // element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    element.innerHTML = 'Hello' + ' ' + 'webpack';
 
     return element;
 }
