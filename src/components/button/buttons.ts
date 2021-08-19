@@ -1,4 +1,6 @@
-function onAddBtnClick(ev) {
+import './btn.scss';
+
+function onAddBtnClick() {
     const label = document.getElementById('my-label');
 
     if (label) {
@@ -22,7 +24,7 @@ function createAddBtn() {
 }
 
 function onClearBtnClick() {
-    const label = document.getElementById('my-label');
+    const label = document.getElementById('my-label')!;
     label.innerText = 'Cleared';
 }
 
