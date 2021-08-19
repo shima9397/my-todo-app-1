@@ -16,8 +16,8 @@ function createAddBtn() {
     btn.classList.add('btn');
     btn.innerText = 'Add TODO';
 
-    btn.addEventListener('click', ev => {
-        onAddBtnClick(ev);
+    btn.addEventListener('click', () => {
+        onAddBtnClick();
     });
 
     return btn;
