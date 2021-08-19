@@ -7,3 +7,5 @@ label();
 
 import './scripts/buttons';
 
+console.log('Hello from TS');
+
