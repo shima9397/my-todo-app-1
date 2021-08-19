@@ -1,4 +1,6 @@
-function component() {
+import './container.scss';
+
+export function homePage() {
     const element = document.createElement('div');
 
     element.id = 'container';
@@ -6,4 +8,4 @@ function component() {
     return element;
 }
 
-document.body.appendChild(component());
+document.body.appendChild(homePage());

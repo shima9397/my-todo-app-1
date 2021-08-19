@@ -1,12 +1,11 @@
 const container = document.getElementById('container');
 
-function createLabel() {
+export function createLabel() {
     const label = document.createElement('label');
 
     label.id = 'my-label';
     label.innerText = 'Hello World';
 
-    container.appendChild(label);
+    if (container)
+        container.appendChild(label);
 }
-
-export default createLabel

@@ -1,4 +1,6 @@
-function onAddBtnClick(ev) {
+import './btn.scss';
+
+function onAddBtnClick() {
     const label = document.getElementById('my-label');
 
     if (label) {
@@ -14,15 +16,15 @@ function createAddBtn() {
     btn.classList.add('btn');
     btn.innerText = 'Add TODO';
 
-    btn.addEventListener('click', ev => {
-        onAddBtnClick(ev);
+    btn.addEventListener('click', () => {
+        onAddBtnClick();
     });
 
     return btn;
 }
 
 function onClearBtnClick() {
-    const label = document.getElementById('my-label');
+    const label = document.getElementById('my-label')!;
     label.innerText = 'Cleared';
 }
 
